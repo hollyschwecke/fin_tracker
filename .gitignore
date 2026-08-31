@@ -1,0 +1,7 @@
+# prevents credentials from being committed to the repository
+.env
+venv/
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
