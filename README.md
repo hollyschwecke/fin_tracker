@@ -56,6 +56,7 @@ The database is hosted using Render and currently contains tables for the applic
 | VS Code | Development environment |
 
 ## Project Structure
+```text
 fin_tracker/
 | 
 |-- app.py
@@ -72,10 +73,11 @@ fin_tracker/
 |-- static/
 |   |-- css/
 |   |-- js/
-
+```
 The project structure will continue to evolve as additional financial features are implemented.
 
 ## Authentication Flow
+```mermaid
 flowchart TD
     A[Register] --> B[Validate Input]
     B --> C[Hash Password]
@@ -84,7 +86,7 @@ flowchart TD
     E --> F[Dashboard]
     F --> G[Logout]
     G --> H[Login Page]
-
+```
 Passwords are never stored as plain text. Passwords are hashed before being stored in PostgreSQL.
 
 The application also uses Flask sessions to keep track of authenticated users and protect routes that should only be accessible after login.
@@ -94,6 +96,7 @@ The PostgreSQL database is being designed around a relational database structure
 
 Planned relationships include:
 
+```text
 Users
 |
 |-- Accounts
@@ -103,7 +106,7 @@ Users
 |-- Categories
 |
 |-- Budgers
-
+```
 Each user's financial data will be associated with their `user_id`, ensuring that users can only acces their own financial information.
 
 ## Development Roadmap
