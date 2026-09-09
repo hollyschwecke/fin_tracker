@@ -112,38 +112,38 @@ Each user's financial data will be associated with their `user_id`, ensuring tha
 ## Development Roadmap
 The project is being developed in phases
 #### Phase 1 - Database Setup (Complete)
-[x] Design initial database structure
-[x] Create PostgreSQL database
-[x] Connect Flask application to PostgreSQL
-[x] Configure Render database
-[x] Create database tables
-[x] Configure environment variables
-[x] Verify database connection
+- [x] Design initial database structure
+- [x] Create PostgreSQL database
+- [x] Connect Flask application to PostgreSQL
+- [x] Configure Render database
+- [x] Create database tables
+- [x] Configure environment variables
+- [x] Verify database connection
 
 #### Phase 2 - User Authentication (Complete)
-[x] Create registration page
-[x] Create login page
-[x] Validate registration fields
-[x] Prevent duplicate usernames/emails
-[x] Hash user passwords
-[x] Store users in PostgreSQL
-[x] Create Flask sessions
-[x] Implement login
-[x] Implement logout
-[x] Protect dashboard
-[x] Add authentication error messages
-[x] Test successful and unsuccessful authentication scenarios
+- [x] Create registration page
+- [x] Create login page
+- [x] Validate registration fields
+- [x] Prevent duplicate usernames/emails
+- [x] Hash user passwords
+- [x] Store users in PostgreSQL
+- [x] Create Flask sessions
+- [x] Implement login
+- [x] Implement logout
+- [x] Protect dashboard
+- [x] Add authentication error messages
+- [x] Test successful and unsuccessful authentication scenarios
 
 #### Phase 3 - Financial Accounts
 The next stage is to allow users to manage their financial accounts
 
 Planned functionality:
-[] Add a financial account
-[] View accounts
-[] Edit account information
-[] Delete accounts
-[] Track account balances
-[] Support different account types
+- [] Add a financial account
+- [] View accounts
+- [] Edit account information
+- [] Delete accounts
+- [] Track account balances
+- [] Support different account types
 
 Examples:
 * Checking
@@ -156,20 +156,20 @@ Examples:
 Users will be able to record and manage individual financial transactions
 
 Planned functionality:
-[] Add transactions
-[] Edit transactions
-[] Delete transactions
-[] Assign transactions to accounts
-[] Assign transactions to categories
-[] Record income and expenses
-[] Store transaction dates
-[] Add transaction descriptions
-[] View transaction history
-[] Filter transactions
+- [] Add transactions
+- [] Edit transactions
+- [] Delete transactions
+- [] Assign transactions to accounts
+- [] Assign transactions to categories
+- [] Record income and expenses
+- [] Store transaction dates
+- [] Add transaction descriptions
+- [] View transaction history
+- [] Filter transactions
 
 Example:
 
-Account:    Checking
+Account:    Checking 
 Category:   Groceries
 Amount:     -$72.45
 Date:       09/08/2026
@@ -179,14 +179,14 @@ Description: Weekly grocery shopping
 The application will eventually allow users to organize spending and create budgets
 
 Planned functionality:
-[] Create expense categories
-[] Create income categories 
-[] Edit categories
-[] Delete categories 
-[] Create monthly budgets
-[] Set spending limits in category
-[] Track spending against budgets
-[] Display remaining budget amounts
+- [] Create expense categories
+- [] Create income categories 
+- [] Edit categories
+- [] Delete categories 
+- [] Create monthly budgets
+- [] Set spending limits in category
+- [] Track spending against budgets
+- [] Display remaining budget amounts
 
 Example:
 
@@ -202,15 +202,15 @@ The dashboard will eventually provide users with an overview of their financial 
 
 Planned functionality:
 
-[] Total account balance
-[] Monthly income
-[] Monthly expenses 
-[] Net income
-[] Spending by category
-[] Budget progress
-[] Recent transactions
-[] Monthly spending trends
-[] Interactive charts and visualizations
+- [] Total account balance
+- [] Monthly income
+- [] Monthly expenses 
+- [] Net income
+- [] Spending by category
+- [] Budget progress
+- [] Recent transactions
+- [] Monthly spending trends
+- [] Interactive charts and visualizations
 
 The goal is to turn raw transaction data into information that is easy for users to understand.
 
@@ -218,29 +218,29 @@ The goal is to turn raw transaction data into information that is easy for users
 Once the core functionality is complete, the applications interface with be improved
 
 Planned improvements:
-[] Responsive design
-[] Consistent navigation
-[] Improved forms
-[] Better error and success messages
-[] Dashboard cards
-[] Data visualization styling
-[] Mobile-friendly layout
-[] Accessibility improvements
+- [] Responsive design
+- [] Consistent navigation
+- [] Improved forms
+- [] Better error and success messages
+- [] Dashboard cards
+- [] Data visualization styling
+- [] Mobile-friendly layout
+- [] Accessibility improvements
 
 #### Phase 8 - Testing and Deployment
 The final phase will focus on making the application more reliable and portfolio-ready.
 
 Planned improvements:
-[] Add automated tests
-[] Test database operations
-[] Test authentication
-[] Test transaction functionality
-[] Improve error handling
-[] Review database security
-[] Deploy the Flask application
-[] Connect the deployed application to PostgreSQL
-[] Add application screenshots
-[] Document deployment instructions 
+- [] Add automated tests
+- [] Test database operations
+- [] Test authentication
+- [] Test transaction functionality
+- [] Improve error handling
+- [] Review database security
+- [] Deploy the Flask application
+- [] Connect the deployed application to PostgreSQL
+- [] Add application screenshots
+- [] Document deployment instructions 
 
 ## Security Considerations
 Security is being incorporated throughout development
