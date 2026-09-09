@@ -169,11 +169,11 @@ Planned functionality:
 
 Example:
 
-Account:    Checking 
-Category:   Groceries
-Amount:     -$72.45
-Date:       09/08/2026
-Description: Weekly grocery shopping
+Account:    Checking   
+Category:   Groceries  
+Amount:     -$72.45  
+Date:       09/08/2026  
+Description: Weekly grocery shopping  
 
 #### Phase 5 - Categories and Budgeting
 The application will eventually allow users to organize spending and create budgets
@@ -192,10 +192,10 @@ Example:
 
 Monthly Budget
 
-Housing         $1500 / $1800
-Groceries       $400 / $600
-Transportation  $180 / $300
-Entertainment   $125 / $200
+Housing         $1500 / $1800  
+Groceries       $400 / $600  
+Transportation  $180 / $300  
+Entertainment   $125 / $200  
 
 #### Phase 6 - Dashboard and Data Visualization
 The dashboard will eventually provide users with an overview of their financial activity.
@@ -256,27 +256,28 @@ Current security measures include:
 Future security improvements will include additional validation, improved session configuration, and further protection of user financial data.
 
 ## Running the Project Locally
-1. Clone the repository
-`git clone https://github.com/hollyschwecke/fin_tracker.git`
+1. Clone the repository  
+`git clone https://github.com/hollyschwecke/fin_tracker.git`  
 `cd fin_tracker`
 
-2. Create the virtual environment
+2. Create the virtual environment  
 `python3 -m venv venv`
-Activate on macOS/Linux:
-`source venv/bin/activate`
 
-3. Install dependencies
+Activate on macOS/Linux:  
+`source venv/bin/activate`  
+
+4. Install dependencies  
 `pip install -r requirements.txt`
 
-4. Configure environment variables
-create a `.env` file in the project root:
-`DATABASE_URL=postgresql://finance_tracker_tkxs_user:tP5om78VyKvw1EqKoLJGtzGtAoSzXxut@dpg-da1pdk2jnfac739v7q4g-a.oregon-postgres.render.com/finance_tracker_tkxs`
-`SECRET_KEY=a20e7eb5b5144f24739e54470ccd5578609f73214ffc7240cf3922810d388813`
+5. Configure environment variables  
+create a `.env` file in the project root:  
+`DATABASE_URL=postgresql://finance_tracker_tkxs_user:tP5om78VyKvw1EqKoLJGtzGtAoSzXxut@dpg-da1pdk2jnfac739v7q4g-a.oregon-postgres.render.com/finance_tracker_tkxs`  
+`SECRET_KEY=a20e7eb5b5144f24739e54470ccd5578609f73214ffc7240cf3922810d388813`  
 Do not commit the `.env` file to GitHub
 
-5. Run the application
-`python3 app.py`
-The application should be available at:
+6. Run the application  
+`python3 app.py`  
+The application should be available at:  
 `http://127.0.0.1:5001`
 
 ## Future Improvements
