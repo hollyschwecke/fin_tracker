@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Account</title>
+</head>
+<body>
+    <h1>Edit Account</h1>
+
+    <!-- display feedback messages from Flask -->
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <ul class="flashes">
+                {% for category, message in messages %}
+                    <li class="{{ category }}">{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+
+    <!-- submit updated information to Flask -->
+    <form method="POST" action="{{ url_for('edit_account', account_id=account_id) }}">
+        
+        <label for="account_name">Account Name:</label>
+        <input type="text" id="account_name" name="account_name" value="{{ account.account_name }}" required>
+        
+        <br><br>
+
+        <label for="account_type">Account Type:</label>
+        <select id="account_type" name="account_type" required>
+            {% for type in account_types %}
+                <option 
+                value="{{ type }}" 
+                {% if account.account_type == type %}selected{% endif %}
+                >
+                    {{ account_type }}
+                </option>
+            {% endfor %}
+        </select>
+        <br><br>
+
+        <label for="current_balance">Current Balance:</label>
+        <input 
+            type="text" 
+            id="current_balance" 
+            name="current_balance" 
+            value="{{ account.current_balance }}" 
+            step="0.01"
+            required
+        >
+        <br><br>    
+
+        <button type="submit">Save Changes</button>
+    </form>
+
+    <br>
+    <a href="{{ url_for('dashboard') }}">Back to Dashboard</a>
+</body>
+</html>

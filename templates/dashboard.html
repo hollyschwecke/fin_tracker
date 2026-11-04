@@ -21,5 +21,30 @@
     {% endwith %}
 
     <a href="{{ url_for('logout') }}">Logout</a>
+    
+    <!-- display the user's financial accounts -->
+    <h2>My Accounts</h2>
+
+    <!-- link to the account creation page -->
+    <a href="{{ url_for('add_account') }}">Add New Account</a>
+
+    {% if accounts %}
+    <!-- display the list of accounts -->
+    <ul>{% for account in accounts %}
+        <div class="account-card">
+            <!-- account name -->
+            <h3>{{ account[1]}}</h3>
+            <!-- account type -->
+            <p>Type: {{ account[2] }}</p>
+            <!-- account balance -->
+            <p>Balance: ${{ "{:,.2f}".format(account[3]) }}</p>
+        </div>
+    {% endfor %}
+    </ul>
+    {% else %}
+        <!-- message displayed when the user has no accounts -->
+        <p>You haven't added any accounts yet.</p>
+    {% endif %}
+    
 </body>
 </html>
